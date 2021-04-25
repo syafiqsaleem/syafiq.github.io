@@ -57,10 +57,16 @@ body {
   margin-left: 80px;
   padding: 40px;
   text-align: left;
-  color: orange;
+  color: white;
   font-family: "Prompt", sans-serif;
   font-weight: bolder;
   font-size: 50px;
+}
+
+#welcome-message .start {
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(to right, orangered, orange);
 }
 
 .nav {
@@ -81,13 +87,13 @@ body {
 }
 
 .nav ul li a {
-  color: white;
+  color: orange;
   text-decoration: none;
   font-family: "Prompt", sans-serif;
 }
 
 .nav ul li a:hover {
-  color: orange;
+  color: white;
   text-decoration: underline;
 }
 

@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <style>
+    .glow {
+      font-size: 80px;
+      color: #fff;
+      text-align: center;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+        from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px orange, 0 0 40px orange, 0 0 50px orangered, 0 0 60px orangered, 0 0 70px orangered;
+      }
+  
+        to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+  </style>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,17 +30,18 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Prompt:wght@500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
-
+    
     <title>HEALTH SEEKER</title>
   </head>
   <body>
     <div class="container-fluid">
       <header>
       <div class="container" id="welcome-page">
-        <div class="row">
+        <div class="row" id="landing-pg">
           <div class="col-6" id="logo">
-            <h1>HEALTH<br>SEEKER</br></h1>
+            <h1 class="glow">HEALTH<br>SEEKER</br></h1>
           </div>  
           <div class="col-6" id="welcome-message">
             <div class="nav">
@@ -60,8 +79,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <h2>Welcome to Us!</h2>
-            <p>Your fitness journey begins here with us.</p>
+            <h2>You Only Fail, When You Stop<br>Trying...</br></h2>
           </div>
         </div>
       </div>  

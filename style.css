@@ -97,6 +97,86 @@ body {
   text-decoration: underline;
 }
 
-.wrapper ul li {
+#left {
+  background-image: url("./img/Rope-Training.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+  align-items: center;
+  padding: 0;
+}
+
+#center {
+  background-color: black;
+  border: 3px;
+  border-color: linear-gradient(to right, orangered, orange);
+  padding: 10px;
+}
+
+#right {
+  background-image: url("./img/maragos.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: black;
+  align-items: center;
+  padding: 0;
+}
+
+#bmi-image {
+  background-image: url("./img/Training-Buddies.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  padding: 0;
+}
+
+#bmi-calculator {
+  padding: 0;
+  margin: 0;
+}
+
+#calculator h1 {
+  font-family: "Prompt", sans-serif;
+  padding: 10px;
+}
+
+#offers-image {
+  background-image: url("./img/lifting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  padding: 0;
+}
+
+#offers {
+  font-family: "Prompt", sans-serif;
+  padding: 0;
+  text-align: center;
+}
+
+#offers ul {
+  padding: 0;
+  margin: 0;
+}
+
+#offers ul li {
   list-style-type: none;
+}
+
+#site-footer h1 {
+  font-family: "Zen Dots", cursive;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+
+#site-footer ul li {
+  list-style-type: none;
+  display: inline-block;
 }

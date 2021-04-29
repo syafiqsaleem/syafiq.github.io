@@ -101,6 +101,7 @@ body {
 #testimonials {
   background-color: rgb(33, 32, 32);
   height: 900px;
+  flex: none;
 }
 
 #testimonials h5 {
@@ -108,6 +109,8 @@ body {
   font-family: "Prompt", sans-serif;
   font-size: 20px;
   color: rgb(221, 144, 60);
+  margin: 0;
+  height: 30px;
 }
 
 #testimonials h1 {
@@ -117,6 +120,8 @@ body {
   font-size: 32px;
   color: white;
   text-shadow: 2px 2px rgb(221, 144, 60);
+  margin: 0;
+  height: 30px;
 }
 
 #carouselExampleCaptions {
@@ -129,6 +134,21 @@ body {
 
 .carousel-inner {
   text-align: center;
+}
+
+#graphics {
+  padding: 0;
+  height: 400px;
+  /* align-items: center; */
+}
+
+.embed-responsive {
+  height: 400px;
+  align-items: center;
+}
+
+.embed-responsive-item {
+  align-items: center;
 }
 
 #left {
@@ -145,7 +165,7 @@ body {
   background-color: black;
   border: 3px;
   border-color: linear-gradient(to right, orangered, orange);
-  padding: 10px;
+  padding: 0;
 }
 
 #right {
@@ -156,6 +176,16 @@ body {
   background-color: black;
   align-items: center;
   padding: 0;
+}
+
+#membership-plans h1 {
+  text-align: center;
+  font-family: "Prompt", sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
+  color: white;
+  text-shadow: 2px 2px rgb(221, 144, 60);
+  margin: 0;
 }
 
 #bmi-image {

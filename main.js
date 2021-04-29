@@ -7,6 +7,10 @@
 //   .then((resp) => console.log(resp.results));
 
 window.onload = () => {
+  let button = document.querySelector("#start");
+
+  button.addEventListener("click", "#bmi-calculator");
+
   let button = document.querySelector("#btn");
 
   // Add event listener('click') to calculate BMI

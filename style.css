@@ -50,6 +50,7 @@ body {
   background-color: black;
   padding: 0;
   height: 950px;
+  text-align: center;
 }
 
 #welcome-message h2 {
@@ -63,7 +64,7 @@ body {
   font-size: 50px;
 }
 
-#welcome-message .start {
+#welcome-message #start {
   text-align: center;
   color: white;
   background-image: linear-gradient(to right, orangered, orange);
@@ -95,6 +96,39 @@ body {
 .nav ul li a:hover {
   color: white;
   text-decoration: underline;
+}
+
+#testimonials {
+  background-color: rgb(33, 32, 32);
+  height: 900px;
+}
+
+#testimonials h5 {
+  text-align: center;
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  color: rgb(221, 144, 60);
+}
+
+#testimonials h1 {
+  text-align: center;
+  font-family: "Prompt", sans-serif;
+  font-weight: bolder;
+  font-size: 32px;
+  color: white;
+  text-shadow: 2px 2px rgb(221, 144, 60);
+}
+
+#carouselExampleCaptions {
+  height: 500px;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.carousel-inner {
+  text-align: center;
 }
 
 #left {

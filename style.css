@@ -67,7 +67,10 @@ body {
 #welcome-message #start {
   text-align: center;
   color: white;
+  font-weight: bold;
   background-image: linear-gradient(to right, orangered, orange);
+  padding: 10px;
+  border: 3px solid white;
 }
 
 .nav {
@@ -91,6 +94,8 @@ body {
   color: orange;
   text-decoration: none;
   font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  margin: 15px;
 }
 
 .nav ul li a:hover {
@@ -399,6 +404,53 @@ body {
 }
 
 /* Details Section */
+#details {
+  background-color: rgb(33, 32, 32);
+}
+
+#quick-contacts h3 {
+  text-align: center;
+  color: white;
+}
+
+#quick-contacts ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin: 20px;
+}
+
+#quick-contacts ul li {
+  color: white;
+  line-height: 2;
+}
+
+#tags {
+  text-align: center;
+  padding-right: 70px;
+}
+
+#tags h3 {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+.btn-bmi-calculator {
+  background-image: linear-gradient(to right, orangered, orange);
+  color: white;
+}
+
+.btn-membership {
+  background-image: linear-gradient(to top, orangered, orange);
+  color: white;
+}
+
+.btn-exercises {
+  background-image: linear-gradient(to left, orangered, orange);
+  color: white;
+}
+
 #site-footer h1 {
   font-family: "Zen Dots", cursive;
   font-size: 20px;

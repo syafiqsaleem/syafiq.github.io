@@ -16,9 +16,9 @@ body {
 }
 
 #logo {
-  background-image: url("./img/Flexing.jpg");
+  background-image: url("./img/Gordon.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: black;
   padding: 0;
@@ -27,7 +27,7 @@ body {
 
 #logo h1 {
   font-family: "Zen Dots", cursive;
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 20px;
   padding: 20px;
   text-align: left;
@@ -106,7 +106,11 @@ body {
 #testimonials {
   background-color: rgb(33, 32, 32);
   height: 900px;
-  flex: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: safe;
+  align-items: stretch;
 }
 
 #testimonials h5 {
@@ -114,8 +118,7 @@ body {
   font-family: "Prompt", sans-serif;
   font-size: 20px;
   color: rgb(221, 144, 60);
-  margin: 0;
-  height: 30px;
+  margin-top: 50px;
 }
 
 #testimonials h1 {
@@ -125,20 +128,25 @@ body {
   font-size: 32px;
   color: white;
   text-shadow: 2px 2px rgb(221, 144, 60);
-  margin: 0;
-  height: 30px;
+  margin-bottom: 20px;
 }
 
 #carouselExampleCaptions {
   height: 500px;
-  width: 700px;
+  width: 900px;
   margin: 0 auto;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   align-items: center;
 }
 
 .carousel-inner {
   text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.carousel-inner h5 {
+  font-size: 24px;
 }
 
 /* Graphics Section */
@@ -147,9 +155,23 @@ body {
   height: 400px;
 }
 
-.embed-responsive {
+.embed-responsive-item {
   height: 400px;
-  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: safe;
+  align-items: stretch;
+  border: 5px solid rgb(221, 144, 60);
+}
+
+.vp-target {
+  background-size: cover;
+}
+
+.vp-shade {
+  height: 400px;
 }
 
 #left {
@@ -411,6 +433,7 @@ body {
 #quick-contacts h3 {
   text-align: center;
   color: white;
+  padding-top: 20px;
 }
 
 #quick-contacts ul {
@@ -456,11 +479,27 @@ body {
   font-size: 20px;
   margin-left: 20px;
   padding: 20px;
-  text-align: left;
+  text-align: center;
+  color: white;
+}
+
+#site-footer ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
 #site-footer ul li {
   list-style-type: none;
   display: inline-block;
+  padding: 20px;
+}
+
+#footer {
+  background-color: rgb(221, 144, 60);
+  text-align: center;
+  font-weight: bold;
 }

@@ -136,10 +136,10 @@ body {
   text-align: center;
 }
 
+/* Graphics Section */
 #graphics {
   padding: 0;
   height: 400px;
-  /* align-items: center; */
 }
 
 .embed-responsive {
@@ -147,14 +147,10 @@ body {
   align-items: center;
 }
 
-.embed-responsive-item {
-  align-items: center;
-}
-
 #left {
   background-image: url("./img/Rope-Training.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: black;
   align-items: center;
@@ -171,11 +167,16 @@ body {
 #right {
   background-image: url("./img/maragos.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: black;
   align-items: center;
   padding: 0;
+}
+
+/* Membership Section */
+#membership-plans {
+  background-color: rgb(33, 32, 32);
 }
 
 #membership-plans h1 {
@@ -185,9 +186,112 @@ body {
   font-size: 32px;
   color: white;
   text-shadow: 2px 2px rgb(221, 144, 60);
-  margin: 0;
+  margin: 50px 10px 40px 10px;
 }
 
+.col-4 {
+  padding: 20px 0 70px 0;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-title {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.yearly-card {
+  border: 3px solid rgb(221, 144, 60);
+  margin: 0 auto;
+}
+
+.daily-card {
+  background-color: rgb(33, 32, 32);
+  border: 1px solid white;
+  margin: 0 auto;
+}
+
+.monthly-card {
+  background-color: rgb(33, 32, 32);
+  border: 1px solid white;
+  margin: 0 auto;
+}
+
+#daily h2 {
+  text-align: center;
+  color: white;
+  margin: 20px;
+  font-size: 45px;
+}
+
+#daily ul {
+  padding: 0;
+}
+
+#daily ul li {
+  list-style-type: none;
+  text-align: center;
+  line-height: 2.5;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.yearly-card h2 {
+  text-align: center;
+  color: white;
+  margin: 20px;
+  font-size: 45px;
+}
+
+#yearly ul {
+  padding: 0;
+}
+
+#yearly ul li {
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  line-height: 2.5;
+  border-bottom: 1px solid white;
+}
+
+.yearly-card .card-title {
+  background-color: rgb(221, 144, 60);
+}
+
+#monthly h2 {
+  text-align: center;
+  color: white;
+  margin: 20px;
+  font-size: 45px;
+}
+
+#monthly ul {
+  padding: 0;
+}
+
+#monthly ul li {
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  line-height: 2.5;
+  border-bottom: 1px solid white;
+}
+
+.btn {
+  margin: 10px;
+  background-color: black;
+  border: 1px solid rgb(221, 144, 60);
+}
+
+/* BMI Calculator Section */
 #bmi-image {
   background-image: url("./img/Training-Buddies.jpg");
   background-repeat: no-repeat;
@@ -198,16 +302,60 @@ body {
 }
 
 #bmi-calculator {
+  height: 500px;
   padding: 0;
   margin: 0;
+  background-color: black;
+  text-align: center;
+}
+
+#bmi-calculator h1 {
+  text-align: center;
+  font-family: "Prompt", sans-serif;
+  font-weight: bolder;
+  font-size: 42px;
+  color: white;
+  text-shadow: 2px 2px rgb(221, 144, 60);
+  margin: 50px 10px 30px 10px;
+}
+
+#calculator {
+  padding: 0;
+  text-align: center;
 }
 
 #calculator h1 {
   font-family: "Prompt", sans-serif;
-  padding: 10px;
+  padding: 20px;
+  margin-top: 30px;
 }
 
+#calculator p {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+}
+
+#bmi-btn {
+  background-image: linear-gradient(to right, orangered, orange);
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#result {
+  color: rgb(221, 144, 60);
+  font-size: 24px;
+  font-weight: bolder;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Offers Page Section */
 #offers-image {
+  height: 500px;
   background-image: url("./img/lifting.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,6 +368,23 @@ body {
   font-family: "Prompt", sans-serif;
   padding: 0;
   text-align: center;
+  height: 500px;
+  background-color: black;
+}
+
+#offers h1 {
+  text-align: center;
+  font-family: "Prompt", sans-serif;
+  font-weight: bolder;
+  font-size: 42px;
+  color: white;
+  text-shadow: 2px 2px rgb(221, 144, 60);
+  margin: 50px 10px 40px 10px;
+}
+
+#offers p {
+  color: white;
+  padding: 10px;
 }
 
 #offers ul {
@@ -229,8 +394,11 @@ body {
 
 #offers ul li {
   list-style-type: none;
+  font-size: 24px;
+  color: rgb(221, 144, 60);
 }
 
+/* Details Section */
 #site-footer h1 {
   font-family: "Zen Dots", cursive;
   font-size: 20px;

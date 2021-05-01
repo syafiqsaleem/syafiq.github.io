@@ -7,11 +7,7 @@
 //   .then((resp) => console.log(resp.results));
 
 window.onload = () => {
-  let button = document.querySelector("#start");
-
-  button.addEventListener("click", "#bmi-calculator");
-
-  let button = document.querySelector("#btn");
+  let button = document.querySelector("#bmi-btn");
 
   // Add event listener('click') to calculate BMI
   button.addEventListener("click", calculateBMI);
@@ -37,7 +33,8 @@ function calculateBMI() {
     let bmi = (weight / ((height * height) / 10000)).toFixed(2);
 
     // Dividing as per the bmi conditions
-    if (bmi < 18.6) result.innerHTML = `Under Weight : <span>${bmi}</span>`;
+    if (bmi < 18.6)
+      result.innerHTML = `Under Weight : <span id='Under Weight'>${bmi}</span>`;
     else if (bmi >= 18.6 && bmi < 24.9)
       result.innerHTML = `Normal : <span>${bmi}</span>`;
     else result.innerHTML = `Over Weight : <span>${bmi}</span>`;

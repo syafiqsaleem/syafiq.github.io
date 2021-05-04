@@ -59,7 +59,7 @@ main {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1536px) {
+@media screen and (max-width: 800px) {
   #welcome-message {
     width: 100%;
     height: 700px;
@@ -223,6 +223,16 @@ main {
   justify-content: safe;
   align-items: stretch;
   border: 5px solid rgb(221, 144, 60);
+}
+
+@media screen and (max-width: 800px) {
+  #graphics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
 }
 
 .vp-target {

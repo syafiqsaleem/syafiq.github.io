@@ -37,7 +37,7 @@ function queryAndFilterResults(url, filterQuery) {
       console.log(filteredArray);
       filteredArray.forEach((workout) => {
         let outcome = document.createElement("div");
-        let h1 = document.createElement("h1");
+        let h1 = document.createElement("h2");
         h1.innerText = workout.name;
         outcome.appendChild(h1);
         outcome.insertAdjacentHTML("beforeend", workout.description);

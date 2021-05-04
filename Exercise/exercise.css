@@ -1,0 +1,60 @@
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+#logo h1 {
+  font-family: "Zen Dots", cursive;
+  font-size: 30px;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+
+/* Naviagation Section */
+.nav {
+  text-align: center;
+  padding: 30px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: orange;
+  text-decoration: none;
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.nav ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+h1 {
+  color: rgb(221, 144, 60);
+}
+
+h2 {
+  color: limegreen;
+}
+
+.form-label {
+  color: white;
+}
+
+#search-result {
+  color: white;
+}

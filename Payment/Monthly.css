@@ -1,0 +1,97 @@
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+#logo h1 {
+  font-family: "Zen Dots", cursive;
+  font-size: 30px;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: left;
+  color: white;
+}
+
+/* Naviagation Section */
+.nav {
+  text-align: center;
+  padding: 30px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: orange;
+  text-decoration: none;
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  margin: 15px;
+}
+
+.nav ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Payment Section */
+.col-6 {
+  padding: 20px 0 70px 0;
+  margin: 0 auto;
+}
+
+.card-title {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.monthly-card {
+  background-color: rgb(33, 32, 32);
+  border: 1px solid white;
+  margin: 0 auto;
+}
+
+#package-selected {
+  height: 800px;
+  background-color: rgb(221, 144, 60, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#package-selected h2 {
+  text-align: center;
+  color: white;
+  margin: 20px;
+  font-size: 45px;
+}
+
+#package-selected ul {
+  padding: 0;
+}
+
+#package-selected ul li {
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+  line-height: 3;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}

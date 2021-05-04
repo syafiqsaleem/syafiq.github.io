@@ -59,39 +59,6 @@ main {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 800px) {
-  #welcome-message {
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #logo {
-    width: 100%;
-    height: 800px;
-  }
-
-  #welcome-carousel {
-    display: none;
-  }
-
-  #welcome-message h2 {
-    text-align: center;
-    font-size: 60px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav {
-    padding: 0;
-    text-align: center;
-    font-size: 20px;
-  }
-}
-
 #welcome-message h2 {
   margin-top: 100px;
   margin-left: 80px;
@@ -142,6 +109,52 @@ main {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 800px) {
+  #welcome-message {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #logo {
+    width: 100%;
+    height: 800px;
+  }
+
+  #welcome-carousel {
+    display: none;
+  }
+
+  #welcome-message h2 {
+    font-size: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav {
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .nav ul li a {
+    color: orange;
+    text-decoration: none;
+    font-family: "Prompt", sans-serif;
+    font-size: 16px;
+    margin: 15px;
+  }
+
+  .nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+/* Testimonials Section */
 #testimonials {
   background-color: rgb(33, 32, 32);
   height: 900px;
@@ -153,7 +166,7 @@ main {
   align-items: stretch;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   #testimonials {
     height: 700px;
     flex-wrap: wrap;
@@ -225,7 +238,7 @@ main {
   border: 5px solid rgb(221, 144, 60);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   #graphics {
     display: flex;
     flex-wrap: wrap;
@@ -275,9 +288,12 @@ main {
   background-color: rgb(33, 32, 32);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #membership-plans {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
   #membership-plans .col-4 {
@@ -408,15 +424,15 @@ main {
   padding: 0;
 }
 
-#bmi-calculator {
-  height: 500px;
-  max-width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: black;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (max-width: 768px) {
+  #bmi-calculator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+  }
 }
 
 #bmi-calculator h1 {
@@ -432,6 +448,8 @@ main {
 #calculator {
   padding: 0;
   text-align: center;
+  height: 500px;
+  background-color: black;
 }
 
 #calculator h1 {
@@ -497,6 +515,25 @@ main {
   padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  #offers-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+  }
+
+  #offers {
+    align-items: center;
+  }
+
+  #offers h1 {
+    margin: 10px auto;
+  }
+}
+
 #offers ul {
   padding: 0;
   margin: 0;
@@ -510,8 +547,7 @@ main {
 
 /* Details Section */
 #details {
-  width: 100%;
-  background-color: rgb(33, 32, 32);
+  background-color: black;
 }
 
 #quick-contacts h3 {
@@ -582,9 +618,23 @@ main {
   padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  #site-footer ul {
+    font-size: 20px;
+  }
+
+  #site-footer ul li {
+    padding: 10px;
+  }
+
+  #details {
+    background-color: rgb(33, 32, 32);
+  }
+}
+
 #footer {
   background-color: rgb(221, 144, 60);
-  width: 100%;
   text-align: center;
   font-weight: bold;
+  margin: 0 auto;
 }

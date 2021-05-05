@@ -9,20 +9,30 @@ btn.addEventListener("click", async function (e) {
 
   let userInput = input.value.toLowerCase();
   console.log(userInput);
+  let counter = 0;
+  function addCounter() {
+    counter++;
+    return counter;
+  }
 
   let firstResult = await queryAndFilterResults(
     "https://wger.de/api/v2/exercise/?language=2&limit=10",
-    userInput
+    userInput,
+    addCounter
   );
   console.log(firstResult);
   let nextPageUrl = firstResult.next;
   while (nextPageUrl) {
-    let newResult = await queryAndFilterResults(nextPageUrl, userInput);
+    let newResult = await queryAndFilterResults(
+      nextPageUrl,
+      userInput,
+      addCounter
+    );
     nextPageUrl = newResult.next;
   }
 });
 
-function queryAndFilterResults(url, filterQuery) {
+function queryAndFilterResults(url, filterQuery, addCounter) {
   return fetch(url, {
     headers: {
       Authorization: "Token 51eae17751517fcd6cfe4323e98e6674a9c914e2",
@@ -36,12 +46,18 @@ function queryAndFilterResults(url, filterQuery) {
       );
       console.log(filteredArray);
       filteredArray.forEach((workout) => {
-        let outcome = document.createElement("div");
-        let h1 = document.createElement("h2");
-        h1.innerText = workout.name;
-        outcome.appendChild(h1);
-        outcome.insertAdjacentHTML("beforeend", workout.description);
-        searchResult.appendChild(outcome);
+        // let outcome = document.createElement("div");
+        // let h1 = document.createElement("h2");
+        let template = `          
+        <tr>
+        <th scope="row">${addCounter()}</th>
+        <td class="exercise-name">${workout.name}</td>
+        <td class="exercise-description">${workout.description}</td>
+        </tr>`;
+        // h1.innerText = workout.name;
+        // outcome.appendChild(h1);
+        // outcome.insertAdjacentHTML("beforeend", workout.description);
+        searchResult.insertAdjacentHTML("beforeend", template);
       });
       return resp;
     });

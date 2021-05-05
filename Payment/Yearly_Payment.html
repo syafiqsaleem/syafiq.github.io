@@ -56,35 +56,43 @@
   <body>
     <div class="container-fluid">
       <div class="row" id="landing-pg">
-        <div class="col-5" id="logo">
+        <div class="col-3" id="logo">
             <h1 class="glow">HEALTH<br>SEEKER</br></h1>
       </div>  
-      <div class="col-7" id="navigation">
+      <div class="col-9" id="navigation">
         <div class="nav">
           <ul>
-            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./index.html" class="active">HOME</a></li>
             <li><a href="./index.html/#bmi-calculator">BMI CALCULATOR</a></li>
             <li><a href="./Exercise/exercise.html">EXERCISES</a></li>
-            <li><a href="#">SUPPLEMENTS</a></li>
-            <li><a href="#details">CONTACT</a></li>
+            <li><a href="./index.html/#membership-plans">MEMBERSHIP</a></li>
+            <li><a href="./index.html/#details">CONTACT</a></li>
           </ul>
+
+          <select>
+            <option value="./index.html">HOME</option>
+            <option value="./index.html/#bmi-calculator">BMI CALCULATOR</option>
+            <option value="./Exercise/exercise.html">EXERCISES</option>
+            <option value="./index.html/#membership-plans">MEMBERSHIP</option>
+            <option value="./index.html/#details">CONTACT</option>
+          </select>
         </div>
       </div> 
       <div class="row" id="payment">
         <div class="col-6" id="package-selected">
-            <div class="yearly-card" style="width: 18rem;">
+            <div class="daily-card" style="width: 18rem;">
                 <h2>$50/month</h2>
                 <div class="card-body">
-                  <h5 class="card-title">12 Months Membership</h5>
-                  <p class="card-text">
-                      <ul>
+                    <h5 class="card-title">12 Months Membership</h5>
+                    <p class="card-text">
+                    <ul>
                         <li>Group classes</li>
                         <li>Personalized diet & training program</li>
                         <li>Flexible training schedule</li>
                         <li>Fitness orientation</li>
-                      </ul></p>
+                    </ul></p>
                 </div>
-              </div>
+            </div>
         </div>    
         <div class="col-6" id="payment-details"></div> 
       

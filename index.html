@@ -48,11 +48,14 @@
               <ul>
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="#bmi-calculator">BMI CALCULATOR</a></li>
-                <li><a href="./Exercise/exercise.html">EXERCISES</a></li>
-                <li><a href="#">SUPPLEMENTS</a></li>
+                <li><a href="./Exercise/exercise.html" target="_blank">EXERCISES</a></li>
+                <li><a href="#membership-plans">MEMBERSHIP</a></li>
                 <li><a href="#details">CONTACT</a></li>
               </ul>
-            </div>  
+            </div> 
+
+            <button onclick="topFunction()" id="top-button" title="Go to Top">Back to Top</button> 
+
             <div id="welcome-carousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -80,7 +83,7 @@
               </button>
             </div>
           <h2>You Only Fail, When You Stop<br>Trying...</br></h2>
-          <button id="start">Get Started Now</button>
+          <a href="#membership-plans" class="btn-welcome">Get Started Now</a>
           </div>
         </div>
       </div>  
@@ -154,7 +157,7 @@
                     <li>Book a Group Class</li>
                     <li>Fitness orientation</li>
                   </ul></p>
-              <a href="./Payment/checkout.html" class="btn btn-primary" target="_blank">SIGN UP TODAY</a>
+              <a href="./Payment/Daily_Payment.html" class="btn btn-primary" target="_blank">SIGN UP TODAY</a>
             </div>
           </div>
         </div>  
@@ -170,7 +173,7 @@
                     <li>Flexible training schedule</li>
                     <li>Fitness orientation</li>
                   </ul></p>
-              <a href="./Payment/checkout.html" class="btn btn-primary" target="_blank">SIGN UP TODAY</a>
+              <a href="./Payment/Yearly_Payment.html" class="btn btn-primary" target="_blank">SIGN UP TODAY</a>
             </div>
           </div>
         </div>
@@ -186,7 +189,7 @@
                     <li>Group trainer</li>
                     <li>Fitness orientation</li>
                   </ul></p>
-              <a href="./Payment/checkout.html" class="btn btn-primary" target="_blank">SIGN UP TODAY</a>
+              <a href="./Payment/Monthly_Payment.html" class="btn btn-primary" target="_blank">SIGN UP TODAY</a>
             </div>
           </div>
         </div>
@@ -230,10 +233,10 @@
         <div class="col-4" id="site-footer">
           <h1 class="glow">HEALTH<br>SEEKER</br></h1>
           <ul>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-youtube"></i></i></li>
-            <li><i class="fab fa-pinterest"></i></li>
+            <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.pinterest.com" target="_blank" title="Pinterest"><i class="fab fa-pinterest"></i></a></li>
           </ul>
         </div>  
         <div class="col-4" id="quick-contacts">
@@ -246,21 +249,42 @@
         </div>
         <div class="col-4" id="tags">
           <h3>TAGS</h3>
-            <button type="button" class="btn-bmi-calculator">BMI CALCULATOR</button>
-            <button type="button" class="btn-membership">MEMBERSHIP</button>
-            <button type="button" class="btn-exercises">EXERCISES</button>
+            <a href="#bmi-calculator" class="btn btn-primary">BMI CALCULATOR</a>
+            <a href="#membership-plans" class="btn btn-primary">MEMBERSHIP</a>
+            <a href="./Exercise/exercise.html" class="btn btn-primary" target="_blank">EXERCISES</a>
         </div>
 
       </div>
+      <footer id="footer">&copy; Copyright 2021 ALL RIGHTS RESERVED</footer>   
     </main> 
-    <footer id="footer">&copy; Copyright 2021 ALL RIGHTS RESERVED</footer> 
-    </div>
+    
     
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("top-button")
+
+      // When the user scrolls down 100px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     <script src="main.js"></script>
   </body>
 </html>

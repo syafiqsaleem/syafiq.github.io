@@ -70,9 +70,10 @@ main {
   font-size: 50px;
 }
 
-#welcome-message #start {
+#welcome-message .btn-welcome {
   text-align: center;
-  color: white;
+  text-decoration: none;
+  color: black;
   font-weight: bold;
   background-image: linear-gradient(to right, orangered, orange);
   padding: 10px;
@@ -109,7 +110,25 @@ main {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 800px) {
+#top-button {
+  display: none;
+  position: fixed;
+  bottom: 3vh;
+  right: 2vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 1vw;
+}
+#top-button:hover {
+  background-color: #111;
+}
+
+@media screen and (max-width: 768px) {
   #welcome-message {
     width: 100%;
     height: 700px;
@@ -132,6 +151,7 @@ main {
     font-size: 60px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
 
   .nav {
@@ -144,8 +164,8 @@ main {
     color: orange;
     text-decoration: none;
     font-family: "Prompt", sans-serif;
-    font-size: 16px;
-    margin: 15px;
+    font-size: 12px;
+    margin: 0 auto;
   }
 
   .nav ul li a:hover {
@@ -158,27 +178,10 @@ main {
 #testimonials {
   background-color: rgb(33, 32, 32);
   height: 900px;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: safe;
   align-items: stretch;
-}
-
-@media screen and (max-width: 768px) {
-  #testimonials {
-    height: 700px;
-    flex-wrap: wrap;
-  }
-
-  #testimonials h5 {
-    font-size: 14px;
-  }
-
-  .carousel-indicators {
-    display: none;
-  }
 }
 
 #testimonials h1 {
@@ -219,6 +222,29 @@ main {
 
 .carousel-inner h5 {
   font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  #testimonials {
+    height: 700px;
+    flex-wrap: wrap;
+  }
+
+  #testimonials h5 {
+    font-size: 14px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .carousel-item h5 {
+    font-size: 12px;
+  }
+
+  .carousel-item p {
+    font-size: 10px;
+  }
 }
 
 /* Graphics Section */
@@ -286,20 +312,6 @@ main {
 /* Membership Section */
 #membership-plans {
   background-color: rgb(33, 32, 32);
-}
-
-@media screen and (max-width: 768px) {
-  #membership-plans {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #membership-plans .col-4 {
-    width: 50%;
-    margin: 0;
-  }
 }
 
 #membership-plans h1 {
@@ -409,6 +421,31 @@ main {
   margin: 10px;
   background-color: black;
   border: 1px solid rgb(221, 144, 60);
+}
+
+@media screen and (max-width: 768px) {
+  #membership-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #membership-plans .col-4 {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #membership-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /* BMI Calculator Section */
@@ -544,7 +581,7 @@ main {
 
 /* Details Section */
 #details {
-  background-color: black;
+  background-color: rgb(33, 32, 32);
 }
 
 #quick-contacts h3 {
@@ -632,6 +669,5 @@ main {
 #footer {
   background-color: rgb(221, 144, 60);
   text-align: center;
-  font-weight: bold;
-  margin: 0 auto;
+  font-size: 16px;
 }

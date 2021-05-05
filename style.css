@@ -15,6 +15,7 @@ main {
   box-sizing: border-box;
 }
 
+/* Landing Page Section */
 #welcome-page {
   max-width: 100%;
   padding: 0;
@@ -80,6 +81,7 @@ main {
   border: 3px solid white;
 }
 
+/* Navigation Section */
 .nav {
   text-align: center;
   padding: 30px;
@@ -110,6 +112,7 @@ main {
   text-decoration: underline;
 }
 
+/* Back to the top */
 #top-button {
   display: none;
   position: fixed;
@@ -666,6 +669,7 @@ main {
   }
 }
 
+/* Footer Section */
 #footer {
   background-color: rgb(221, 144, 60);
   text-align: center;

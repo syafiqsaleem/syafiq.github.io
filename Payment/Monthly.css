@@ -102,11 +102,11 @@ body {
 }
 
 #payment-details {
-  background-image: url("./img/checkout-preview.jpg");
+  background-image: url("../img/checkout-preview.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
   padding: 0;
 }
 

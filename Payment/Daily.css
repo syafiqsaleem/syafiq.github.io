@@ -63,12 +63,12 @@ body {
   background-color: rgb(33, 32, 32);
   border: 1px solid white;
   margin: 0 auto;
-  height: 500px;
+  height: 600px;
 }
 
 #package-selected {
   height: 800px;
-  background-color: rgb(221, 144, 60, 0.7);
+  background-color: rgb(221, 144, 60, 0.8);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -94,4 +94,51 @@ body {
   color: white;
   padding: 10px;
   border-bottom: 1px solid white;
+}
+
+#payment {
+  margin: 0;
+  padding: 0;
+}
+
+#payment-details {
+  background-image: url("./img/checkout-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(255, 255, 255, 0.8);
+  padding: 0;
+}
+
+.nav select {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #logo h1 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: left;
+  }
+
+  .nav {
+    margin: 0 auto;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav select {
+    display: inline-block;
+  }
+
+  .nav ul li a {
+    color: orange;
+    text-decoration: none;
+    font-family: "Prompt", sans-serif;
+    font-size: 14px;
+    margin: 10px;
+  }
 }

@@ -45,6 +45,7 @@ body {
 
 h1 {
   color: rgb(221, 144, 60);
+  padding-top: 30px;
 }
 
 h2 {
@@ -57,4 +58,42 @@ h2 {
 
 #search-result {
   color: white;
+}
+
+#search-form-btn {
+  background-image: linear-gradient(to right, orangered, orange);
+  border: 1px solid white;
+}
+
+.nav select {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #logo h1 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: left;
+  }
+
+  .nav {
+    margin: 0 auto;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav select {
+    display: inline-block;
+  }
+
+  .nav ul li a {
+    color: orange;
+    text-decoration: none;
+    font-family: "Prompt", sans-serif;
+    font-size: 14px;
+    margin: 10px;
+  }
 }
